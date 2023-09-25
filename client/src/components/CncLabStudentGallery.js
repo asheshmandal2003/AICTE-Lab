@@ -1,5 +1,12 @@
-import { ImageList, ImageListItem } from "@mui/material";
+import React from "react";
 import useMediaQuery from "@mui/material/useMediaQuery";
+
+const itemdata = [
+  {
+    id: 1,
+    img: "IMG-20230607-WA0007.jpg",
+  },
+];
 
 function CncLabStudentGallery() {
   const media = useMediaQuery("(min-width:800px)");
