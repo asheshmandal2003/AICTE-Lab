@@ -1,5 +1,9 @@
 import React from "react";
 import useMediaQuery from "@mui/material/useMediaQuery";
+<<<<<<< HEAD
+import { ImageList, ImageListItem } from '@mui/material';
+=======
+>>>>>>> c3e9e70d6de82640d87c4670f326cd877fe3b59d
 
 const itemdata = [
   {
