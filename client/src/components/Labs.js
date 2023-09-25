@@ -2,6 +2,7 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 import Lab from "./Lab";
 import useMediaQuery from "@mui/material/useMediaQuery";
+import Thumbnail from "./Thumbnail";
 
 function Labs() {
   const media = useMediaQuery("(min-width:800px)");
@@ -15,6 +16,7 @@ function Labs() {
         flexDirection: "column",
       }}
     >
+      <Thumbnail />
       <Typography variant="h4" mt={5} color="primary">
         Our Labs
       </Typography>
@@ -31,7 +33,7 @@ function Labs() {
           url={"/labpage"}
         />
         <Lab
-          imageLink={"/images/CNC-wood-router.avif"}
+          imageLink={"/images/wood-router.jpg"}
           labName="CNC Wood Router Lab"
         />
         <Lab imageLink={"/images/18754.jpg"} labName="IOT Lab" />
@@ -39,11 +41,8 @@ function Labs() {
           imageLink={"/images/laser-cutting.jpg"}
           labName="Laser Cutting Lab"
         />
-        <Lab imageLink={"/images/prototype.avif"} labName="Prototypes Lab" />
-        <Lab
-          imageLink={"/images/vinyl-cutter.avif"}
-          labName="Vinyl Cutter Lab"
-        />
+        <Lab imageLink={"/images/3528486.jpg"} labName="Prototypes Lab" />
+        <Lab imageLink={"/images/vinyl.jpg"} labName="Vinyl Cutter Lab" />
       </Box>
     </Box>
   );
