@@ -26,20 +26,44 @@ function NavBar() {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "" },  }}>
-            <Box >
+          <Box sx={{
+            flexGrow: 1, display: { xs: "flex", md: "" },
+            width: 4,
+            height: 4,
+          }}>
+            <Box sx={{
+              flexGrow: 1, display: { xs: "flex", md: "" },
+              width: 40,
+              height: 40,
+            }}>
               <img src="/images/aictelablogo.png" alt="aictelab"></img>
             </Box>
-            <Box>
+            <Box sx={{
+              flexGrow: 1, display: { xs: "flex", md: "" },
+              width: 40,
+              height: 40,
+            }}>
               <img src="/images/jiscelogo.png" alt="aictelab"></img>
             </Box>
-            <Box>
+            <Box sx={{
+              flexGrow: 1, display: { xs: "flex", md: "" },
+              width: 40,
+              height: 40,
+            }}>
               <img src="/images/jisgrouplogo.png" alt="aictelab"></img>
             </Box>
-            <Box>
+            <Box sx={{
+              flexGrow: 1, display: { xs: "flex", md: "" },
+              width: 40,
+              height: 40,
+            }}>
               <img src="/images/IIClogo.png" alt="aictelab"></img>
             </Box>
-            <Box>
+            <Box sx={{
+              flexGrow: 1, display: { xs: "flex", md: "" },
+              width: 40,
+              height: 40,
+            }}>
               <img src="/images/iqaclogo.png" alt="aictelab"></img>
             </Box>
           </Box>

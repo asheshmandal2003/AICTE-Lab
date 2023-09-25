@@ -2,14 +2,19 @@ import React from 'react'
 import useMediaQuery from "@mui/material/useMediaQuery";
 import { ImageList, ImageListItem } from '@mui/material';
 
+
 const itemdata = [
     {
         id: 1,
-        img: "IMG-20230607-WA0007.jpg",
+        img: "",
+    },
+    {
+        id: 2,
+        img: "",
     },
 ];
 
-function CncLabStudentGallery() {
+function LaserCutterLabStudentGallery() {
     const media = useMediaQuery("(min-width:800px)");
     return (
         <ImageList sx={{ width: media ? 1000 : 500, mb: 5 }} cols={media ? 3 : 1}>
@@ -22,4 +27,4 @@ function CncLabStudentGallery() {
     );
 }
 
-export default CncLabStudentGallery
+export default LaserCutterLabStudentGallery
