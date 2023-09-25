@@ -1,11 +1,15 @@
 import React from "react";
-import { Box, Card, Typography } from "@mui/material";
+import { Card, Typography } from "@mui/material";
 import "./glassmorphism.css";
+import { useNavigate } from "react-router-dom";
 
-function Lab({ imageLink, labName }) {
+function Lab({ imageLink, labName, url }) {
+  const navigate = useNavigate();
   return (
     <Card
       className="glass"
+      component="div"
+      onClick={() => navigate(url)}
       sx={{
         maxWidth: 400,
         height: 200,

@@ -1,8 +1,10 @@
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React from "react";
 import Lab from "./Lab";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
 function Labs() {
+  const media = useMediaQuery("(min-width:800px)");
   return (
     <Box
       sx={{
@@ -10,16 +12,24 @@ function Labs() {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        flexDirection: "column",
       }}
     >
+      <Typography variant="h4" mt={5} color="primary">
+        Our Labs
+      </Typography>
       <Box
         sx={{
           width: "80%",
           display: "grid",
-          gridTemplateColumns: "repeat(2, 1fr)",
+          gridTemplateColumns: `repeat(${media ? 2 : 1}, 1fr)`,
         }}
       >
-        <Lab imageLink={"/images/3D-printer.avif"} labName="3D Printer Lab" />
+        <Lab
+          imageLink={"/images/3D-printer.avif"}
+          labName="3D Printer Lab"
+          url={"/labpage"}
+        />
         <Lab
           imageLink={"/images/CNC-wood-router.avif"}
           labName="CNC Wood Router Lab"

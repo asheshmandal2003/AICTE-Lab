@@ -1,13 +1,4 @@
-import {
-  Card,
-  CardActions,
-  CardContent,
-  CardMedia,
-  IconButton,
-  Typography,
-} from "@mui/material";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-
+import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 function LabDetails() {
   return (
     <Card sx={{ maxWidth: 600, m: 4 }}>
@@ -29,9 +20,6 @@ function LabDetails() {
           material until the object is created. Each of these layers can be seen
           as a thinly sliced cross-section of the object.
         </Typography>
-        <IconButton>
-          <FavoriteIcon />
-        </IconButton>
       </CardContent>
     </Card>
   );
