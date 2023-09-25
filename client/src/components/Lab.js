@@ -1,6 +1,6 @@
 import React from "react";
-import { Card, Typography } from "@mui/material";
-import "./glassmorphism.css";
+import { Box, Card, Typography } from "@mui/material";
+// import "./glassmorphism.css";
 import { useNavigate } from "react-router-dom";
 
 function Lab({ imageLink, labName, url }) {
@@ -17,9 +17,14 @@ function Lab({ imageLink, labName, url }) {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        backgroundImage: `url(${imageLink})`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
       }}
     >
-      <Typography>{labName}</Typography>
+      <Box sx={{ p: 2, width: "100%", textAlign: "center" }}>
+        <Typography>{labName}</Typography>
+      </Box>
     </Card>
   );
 }

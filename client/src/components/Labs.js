@@ -26,7 +26,7 @@ function Labs() {
         }}
       >
         <Lab
-          imageLink={"/images/3D-printer.avif"}
+          imageLink={"/images/29626.jpg"}
           labName="3D Printer Lab"
           url={"/labpage"}
         />
@@ -34,7 +34,7 @@ function Labs() {
           imageLink={"/images/CNC-wood-router.avif"}
           labName="CNC Wood Router Lab"
         />
-        <Lab imageLink={"/images/IOT.avif"} labName="IOT Lab" />
+        <Lab imageLink={"/images/18754.jpg"} labName="IOT Lab" />
         <Lab
           imageLink={"/images/laser-cutting.jpg"}
           labName="Laser Cutting Lab"
