@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Box, Card, Typography } from "@mui/material";
-// import "./glassmorphism.css";
 import { useNavigate } from "react-router-dom";
 
 function Lab({ imageLink, labName, url }) {
   const navigate = useNavigate();
+  const [display, setDisplay] = useState(false);
   return (
     <Card
+      onMouseOver={() => setDisplay(true)}
+      onMouseLeave={() => setDisplay(false)}
       className="glass"
       component="div"
       onClick={() => navigate(url)}
@@ -20,11 +22,14 @@ function Lab({ imageLink, labName, url }) {
         backgroundImage: `url(${imageLink})`,
         backgroundPosition: "center",
         backgroundSize: "cover",
+        cursor: "pointer",
       }}
     >
-      <Box sx={{ p: 2, width: "100%", textAlign: "center" }}>
-        <Typography>{labName}</Typography>
-      </Box>
+      {display && (
+        <Box sx={{ p: 2, width: "100%", textAlign: "center", bgcolor: "#fff" }}>
+          <Typography>{labName}</Typography>
+        </Box>
+      )}
     </Card>
   );
 }
